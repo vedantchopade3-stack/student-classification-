@@ -1,0 +1,92 @@
+{
+    "target": "TARGET_RISK",
+    "features": [
+        "FACULTY",
+        "DEGREE_PROGRAM",
+        "CURRICULUM_YEAR",
+        "GENDER",
+        "AGE",
+        "MARITAL_STATUS",
+        "ETHNICITY",
+        "DISABILITY",
+        "INSTITUTION_TYPE",
+        "NATIONALITY_COUNTRY",
+        "TRANSFER_STUDENT_FLAG",
+        "PAYMENT_PLAN",
+        "ONLINE_ADMISSION_TYPE",
+        "PAYMENT_DEFERRAL_TYPE",
+        "SCHOLARSHIP_NAME",
+        "REGION"
+    ],
+    "numeric_features": [
+        "CURRICULUM_YEAR",
+        "AGE",
+        "PAYMENT_DEFERRAL_TYPE"
+    ],
+    "categorical_features": [
+        "FACULTY",
+        "DEGREE_PROGRAM",
+        "GENDER",
+        "MARITAL_STATUS",
+        "ETHNICITY",
+        "DISABILITY",
+        "INSTITUTION_TYPE",
+        "NATIONALITY_COUNTRY",
+        "TRANSFER_STUDENT_FLAG",
+        "PAYMENT_PLAN",
+        "ONLINE_ADMISSION_TYPE",
+        "SCHOLARSHIP_NAME",
+        "REGION"
+    ],
+    "classes": [
+        "0",
+        "1"
+    ],
+    "class_mapping": {
+        "0": 0,
+        "1": 1
+    },
+    "accuracy": 0.9786307874950534,
+    "cv_macro_f1": 0.9074341524301779,
+    "test_macro_f1": 0.8872344856309871,
+    "classification_report": {
+        "0": {
+            "precision": 0.868421052631579,
+            "recall": 0.717391304347826,
+            "f1-score": 0.7857142857142857,
+            "support": 138.0
+        },
+        "1": {
+            "precision": 0.9838375466224617,
+            "recall": 0.9937212222687317,
+            "f1-score": 0.9887546855476884,
+            "support": 2389.0
+        },
+        "accuracy": 0.9786307874950534,
+        "macro avg": {
+            "precision": 0.9261292996270203,
+            "recall": 0.8555562633082789,
+            "f1-score": 0.8872344856309871,
+            "support": 2527.0
+        },
+        "weighted avg": {
+            "precision": 0.977534627678757,
+            "recall": 0.9786307874950534,
+            "f1-score": 0.9776666067281358,
+            "support": 2527.0
+        }
+    },
+    "confusion_matrix": [
+        [
+            99,
+            39
+        ],
+        [
+            15,
+            2374
+        ]
+    ],
+    "best_model": "Gradient Boosting",
+    "records": 12632,
+    "feature_count": 16
+}
